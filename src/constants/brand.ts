@@ -41,30 +41,47 @@ export const BRAND_COLORS = {
   }
 } as const;
 
+// Unified brand colors for all platforms with creative layout variations
 export const PLATFORM_THEMES = {
   school: {
     primary: BRAND_COLORS.primary[700],
     secondary: BRAND_COLORS.accent[500],
     accent: BRAND_COLORS.primary[600],
-    gradient: 'from-amber-50 via-orange-50 to-yellow-50'
+    gradient: `from-[${BRAND_COLORS.primary[50]}] via-[${BRAND_COLORS.accent[100]}] to-[${BRAND_COLORS.primary[100]}]`,
+    heroGradient: `from-[${BRAND_COLORS.primary[900]}]/20 via-[${BRAND_COLORS.primary[800]}]/10 to-[${BRAND_COLORS.accent[600]}]/20`,
+    cardGradient: `from-[${BRAND_COLORS.primary[100]}]/50 to-[${BRAND_COLORS.accent[100]}]/30`,
+    textGradient: `from-[${BRAND_COLORS.primary[800]}] via-[${BRAND_COLORS.primary[700]}] to-[${BRAND_COLORS.accent[600]}]`,
+    layoutStyle: 'academic' // Academic grid layouts, structured sections
   },
   masjid: {
     primary: BRAND_COLORS.primary[700],
     secondary: BRAND_COLORS.accent[500],
     accent: BRAND_COLORS.primary[600],
-    gradient: 'from-amber-50 via-orange-50 to-yellow-50'
+    gradient: `from-[${BRAND_COLORS.primary[50]}] via-[${BRAND_COLORS.accent[100]}] to-[${BRAND_COLORS.primary[100]}]`,
+    heroGradient: `from-[${BRAND_COLORS.primary[900]}]/20 via-[${BRAND_COLORS.primary[800]}]/10 to-[${BRAND_COLORS.accent[600]}]/20`,
+    cardGradient: `from-[${BRAND_COLORS.primary[100]}]/50 to-[${BRAND_COLORS.accent[100]}]/30`,
+    textGradient: `from-[${BRAND_COLORS.primary[800]}] via-[${BRAND_COLORS.primary[700]}] to-[${BRAND_COLORS.accent[600]}]`,
+    layoutStyle: 'spiritual' // Circular elements, flowing layouts, prayer-focused
   },
   charity: {
     primary: BRAND_COLORS.primary[700],
     secondary: BRAND_COLORS.accent[500],
     accent: BRAND_COLORS.primary[600],
-    gradient: 'from-amber-50 via-orange-50 to-yellow-50'
+    gradient: `from-[${BRAND_COLORS.primary[50]}] via-[${BRAND_COLORS.accent[100]}] to-[${BRAND_COLORS.primary[100]}]`,
+    heroGradient: `from-[${BRAND_COLORS.primary[900]}]/20 via-[${BRAND_COLORS.primary[800]}]/10 to-[${BRAND_COLORS.accent[600]}]/20`,
+    cardGradient: `from-[${BRAND_COLORS.primary[100]}]/50 to-[${BRAND_COLORS.accent[100]}]/30`,
+    textGradient: `from-[${BRAND_COLORS.primary[800]}] via-[${BRAND_COLORS.primary[700]}] to-[${BRAND_COLORS.accent[600]}]`,
+    layoutStyle: 'compassionate' // Heart-centered designs, impact-focused layouts
   },
   travels: {
     primary: BRAND_COLORS.primary[700],
     secondary: BRAND_COLORS.accent[500],
     accent: BRAND_COLORS.primary[600],
-    gradient: 'from-amber-50 via-orange-50 to-yellow-50'
+    gradient: `from-[${BRAND_COLORS.primary[50]}] via-[${BRAND_COLORS.accent[100]}] to-[${BRAND_COLORS.primary[100]}]`,
+    heroGradient: `from-[${BRAND_COLORS.primary[900]}]/20 via-[${BRAND_COLORS.primary[800]}]/10 to-[${BRAND_COLORS.accent[600]}]/20`,
+    cardGradient: `from-[${BRAND_COLORS.primary[100]}]/50 to-[${BRAND_COLORS.accent[100]}]/30`,
+    textGradient: `from-[${BRAND_COLORS.primary[800]}] via-[${BRAND_COLORS.primary[700]}] to-[${BRAND_COLORS.accent[600]}]`,
+    layoutStyle: 'journey' // Adventure-themed layouts, destination-focused designs
   }
 } as const;
 
